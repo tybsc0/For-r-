@@ -59,11 +59,9 @@ b=B
 A
 B
 C=A+B
-c
-D=-4[B]-A
+C
+D=a-b
 D
-e=a-b
-e
 A%*%B
 B%*%A
 det(A)
@@ -73,5 +71,76 @@ Solve(B)
 t(A)
 t(B)
 A%*%t(b)
-t()
+t(A%*%B)
+t(A)%*%t(b)
 
+
+
+
+## quetsion no 05 
+
+A1=matrix(c(1,3,5,8,5,5,2,3,1) , nrow=3 , ncol = 3, byrow = TRUE)
+A2=matrix(c(2,3,2,0,6,5,1,3,2) , nrow=3 , ncol = 3, byrow = TRUE)
+A1+A2
+A2-A1
+A1%*%A2
+det(A1)
+det(A2)
+solve(A1)
+solve(A2)
+t(A1)
+A1%*%t(A2)
+solve(t(A1%*%A2))
+t(A1%*%A2)
+
+### Question no 06
+
+n=seq(1:10)
+n
+X=c(28,27,26,32,30,29,35,30,32,40)
+X
+Y=c(24,24,20,28,25,26,32,26,30,35)
+Y
+d=data.frame(n,X,Y)
+d
+head(d)                  # Display 1st 6 rows
+tail(d)                  # Display last 6 rows
+nrow(d)                  # no of length in rows
+ncol(d)                  # no of length in cols    
+d[1:3,]                
+d[8:10,]
+d[1:3,2:3]
+d[3,1]
+z=(X+Y)/2
+z
+transform(n,Z=z)
+
+
+# Question no . 07 
+
+n=seq(1,10)
+n
+z1=c(5,3,2,6,3,7,4,5,7)
+z1
+c=data.frame(n,z1)
+c
+d1=merge(d,c, by="n")
+d1
+install.packages("dplyr")
+library("dplyr")
+d1[-4]
+d1[c(1,4)]
+
+#### Question no 08
+h=c(140,137,150,147,139,140,150,132,138,140)
+h
+w=c(55,57,59,62,61,60,60,58,59,57)
+w
+d=data.frame(h,w)
+d
+h1=h[h>145]
+h1
+w1=w[w>55]
+w1
+d1=subset(d,h>140|w>60)
+d1
