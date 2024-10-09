@@ -1,0 +1,258 @@
+IV)
+
+import java.util.*;
+class callbill
+{
+ public static void main(String args[])
+	{
+	 Scanner s = new Scanner(System.in);
+	 int n; 
+	 float amt;
+	 System.out.println("Enter the no. of Calls");
+	 n = s.nextInt();
+	 if(n<=150)
+	 amt = 400;
+	 else
+	 amt = 400+((n-150)*0.8f);
+	 System.out.println("The Bill amount of the user is "+amt);
+	}
+}
+
+
+
+
+
+
+V)
+
+import java.util.*;
+class factorial
+{
+ public static void main(String args[])
+	{
+	 Scanner s = new Scanner(System.in);
+	 int n, x, p=1;
+	 System.out.println("Enter a no.");
+	 n = s.nextInt();
+	 for(x=1; x<=n; x++)
+	 p=p*x;
+	 System.out.println(n+" factorial is "+p);
+	}
+}
+
+
+
+VI)
+
+import java.util.*;
+class linesearch
+{
+ public static void main(String args[])
+	{
+	 Scanner s = new Scanner(System.in);
+	 int x[][] = new int[1][5];
+	 int r, c, n, flag=1;
+	 System.out.println("Enter the numbers");
+	 for(c=0; c<5; c++)
+	 x[0][c] = s.nextInt();
+	 System.out.println("Enter no. to search");
+	 n = s.nextInt();
+	 for(c=0; c<5; c++)
+		{
+		 if(n == x[0][c])
+			{
+			 System.out.println("No. found in "+(c+1)+" position");
+			 flag = 2;
+			}
+		}			 
+		
+	 if(flag == 1)
+	 System.out.println("No. not found");
+	}
+}
+
+
+
+VII)
+
+class flower
+{
+ public void display()
+	{
+	 System.out.println("Rose is a Beautiful flower");
+	}
+ public void display(String s)
+	{
+	 for(int i=0; i<2; i++)
+	 System.out.println(s);
+	}
+ public void display(String s, int n)
+	{
+	 for(int i=0; i<n; i++)
+	 System.out.println(s);
+	}
+}
+public class polymorph
+{
+ public static void main(String args[])
+	{
+	 flower f1 = new flower();
+	 f1.display();
+	 f1.display("Sunflower is a Beautiful flower");
+	 f1.display("Marigold is a Beautiful flower",4);
+	}
+}
+
+
+
+VIII)
+
+import java.util.*;
+class transpose
+{
+ public static void main(String args[])
+	{
+	 int x[][] = new int[5][3];
+	 int y[][] = new int[3][5];
+	 int r, c;
+	 Scanner s = new Scanner(System.in);
+	 for(r=0; r<x.length; r++)
+		{
+		 System.out.println("Enter Data for row "+r);
+		 for(c=0; c<3; c++)
+		 x[r][c] = s.nextInt();
+		}
+	 System.out.println("Matrix X is -");
+	 for(r=0; r<x.length; r++)
+		{
+		 for(c=0; c<3; c++)
+			{
+	 		 System.out.print(x[r][c]+" ");
+			}
+		 System.out.print("\n");
+		}
+	 System.out.println("The Transpose of matrix X is -");
+	 for(r=0; r<y.length; r++)
+		{
+		 for(c=0; c<5; c++)
+			{
+			 y[r][c] = x[c][r];
+			 System.out.print(y[r][c]+" ");
+			}
+		 System.out.print("\n");
+		}
+	}
+}
+
+
+IX)
+
+import java.util.*;
+class table
+{
+ public static void main(String args[])
+	{
+	 Scanner s = new Scanner(System.in);
+	 int x, n;
+	 System.out.println("Enter the no.");
+	 n = s.nextInt();
+	 System.out.println("The multiplication table for "+n+" is ");
+	 for(x=1; x<11; x++)
+	 System.out.println(n+" x "+x+" = "+(n*x));
+	}
+}
+
+
+
+X)
+
+import java.util.*;
+class fibonacii
+{
+ public static void main(String args[])
+	{
+	 Scanner s = new Scanner(System.in);
+	 int n, x=1, y=-1, sum;
+	 System.out.println("Enter a no.");
+	 n = s.nextInt();
+	 System.out.println("The Fibonacii series is ");
+	 for(int i=1; i<=n; i++)
+		{
+		 sum = x+y;
+		 System.out.print(sum+" ");
+		 y = x;
+		 x = sum;
+		}
+	}
+}
+
+
+
+XI)
+
+import java.util.*;
+class A
+{
+ private int y;
+ public A(int a)
+	{
+	 y = a;
+	}
+ public void display()
+	{
+	 int x;
+	 for(x=1; x<=y; x++)
+		{
+		 if(x%5==0)
+		 System.out.println(x);
+		}
+	}
+}
+class B
+{
+ public static void main(String args[])
+	{
+	 Scanner s = new Scanner(System.in);
+	 int b;
+	 System.out.println("Enter the no.");
+	 b = s.nextInt();
+	 A c = new A(b);
+	 c.display();
+	}
+}
+
+
+
+XII)
+
+import java.util.*;
+class A
+{
+ private int y;
+ public A(int a)
+	{
+	 y = a;
+	}
+ public void display()
+	{
+	 float x; 
+	 float sum = 1.0f;
+	 for(x=2; x<=y; x++)
+		{
+		 sum = sum+(1/x);
+		}
+	 System.out.println("The sum is - "+sum);
+	}
+}
+class B
+{
+ public static void main(String args[])
+	{
+	 Scanner s = new Scanner(System.in);
+	 int b;
+	 System.out.println("Enter the no.");
+	 b = s.nextInt();
+	 A c = new A(b);
+	 c.display();
+	}
+}
