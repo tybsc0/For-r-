@@ -2,6 +2,7 @@
    
 #######   Question.no 01
 install.packages(ggplot2)
+install.packages(ggplot2)
 library(ggplot2)
 View(stackloss)
 str(stackloss)
