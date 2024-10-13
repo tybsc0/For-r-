@@ -1,4 +1,4 @@
-IV)
+IV) Write a program to input the Number of calls made by the user. Calculate and display the bill amount, which includes a fixed rent of rs. 400. The first 150 calls are free with excess calls charged at 80 paise each.
 
 import java.util.*;
 class callbill
@@ -20,10 +20,7 @@ class callbill
 
 
 
-
-
-
-V)
+V) Write a program to find the factorial of a given number. Compute the factorial of 5.
 
 import java.util.*;
 class factorial
@@ -42,7 +39,7 @@ class factorial
 
 
 
-VI)
+VI)	Write a program to store 5 integers in an array. Apply Linear search to find if the given number exists in the array.  ?
 
 import java.util.*;
 class linesearch
@@ -73,8 +70,15 @@ class linesearch
 
 
 
-VII)
+VII)	Write a java program to define following classes : A class having three overloading methods. The first method accepts no parameters, the second accepts one string and third method accepts one string and one integer parameter. 
+These methods display the following messages 
+Rose is a beautiful flower  - once using first method
+Sunflower is a beautiful flower – twice using second method.
+Marigold is a beautiful flower four times using third method.
+Write a class having main() method to invoke above methods. ???
 
+
+ 
 class flower
 {
  public void display()
@@ -105,7 +109,7 @@ public class polymorph
 
 
 
-VIII)
+VIII) Write a program to create a two dimensional array of size [5] x [3]. Display the transpose of the matrix.
 
 import java.util.*;
 class transpose
@@ -145,7 +149,7 @@ class transpose
 }
 
 
-IX)
+IX) Accept a number and print the multiplication table of it.
 
 import java.util.*;
 class table
@@ -164,7 +168,7 @@ class table
 
 
 
-X)
+X) Write a program to display the first n Fibonacii numbers. Value of “n” should be taken from user.
 
 import java.util.*;
 class fibonacii
@@ -188,7 +192,9 @@ class fibonacii
 
 
 
-XI)
+XI) Create a class called “A” containing the instance variable y (integer) and define a constructor to initialize the instance variable and a method in this class that will display all numbers between 1 and y that are divisible by 5. 
+Class “B” contains main method in it and calls the method for a value of your choice.
+
 
 import java.util.*;
 class A
@@ -223,7 +229,9 @@ class B
 
 
 
-XII)
+XII)  Create a class called “A” containing instance variable (integer) and defines a constructor to initialize the instance variable and a method in this class that will find the following sum 
+1+ 1/2 + 1/3+ 1/4 +1/5+…….+1/n.  Class “B” contains the main method and calls the method to display the sum.
+
 
 import java.util.*;
 class A
