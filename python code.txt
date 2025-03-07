@@ -1,0 +1,73 @@
+1. 1. Accept a number from user and print its multiplication table using For loop. 
+>>>>>>>
+n=int(input("Enter A Number"))
+for y in range(1,11):
+    z=n*y
+    print(n,"X",y,"=",z)
+
+2.Accept a number from user and print its factorial using While loop. 
+>>>>>>>>
+x = int(input("Enter a number: "))
+y = 1
+f = 1
+
+while y <= x:
+    f *= y
+    y += 1
+print("Factorial of", x, "=", f)
+
+3.Accept a number from user. Pass this number to a function which will test if the number is a multiple of 7 and is divisible by 5.
+>>>>>>>>
+X=int(input("Enter a number"))
+def test(a):
+     if(a%7==0):
+        if(a%5==0):
+            print(" number is a multiple of 7 and is divisible by 5")
+        else:
+             print(" number is a multiple of 7 but not divisible by 5")
+     elif(a%5==0):
+           print("Number is divisible by 5 but not a multiple of 7")
+     else:
+        print("Number is neither a multiple of 7 nor divisible by 5")
+test(X)
+
+4. Accept a number from user(n). Print the numbers from n to 1 in reverse order by using a recursive function.
+>>>>>>
+n=int(input("ENter a number"))
+def display(x):
+    print(x)
+    if(x>1):
+        display(x-1)
+    else:
+        return
+display(n)
+
+5.Create a List L with 5 numbers stored in it. Write a loop program which calculates and prints the sum of all the numbers stored in the List.
+>>>>>>>>>
+L = [7, 8, 92, 56, 22]
+sum = 0  
+
+for i in L:
+    sum += i  
+
+print("Sum of all numbers in L:", sum)  
+
+6. Write a program to check if the number given by user exists in a tuple. If it is found then print "Yes, No. Found" else print "No. Not found". 
+>>>>>>
+T=(12,32,89,68,44)
+x=int(input("Enter value to be Searched"))
+for y in T:
+    if(x==y):
+        print("yes, No Found")
+        break
+else:
+    print("NO , NOt Found")
+
+7.Given a dictionary get all values from the dictionary and add it in a list but don't add duplicates.
+>>>>>>>>>
+sDict1={'North':12,'South':39,'East':52,'West':68,'NorthEast':72,'NorthWest':87}
+newList=list()
+for i in sDict1.values():
+    if i not in newList:
+        newList.append(i)
+print("Unique List:",newList)
